@@ -1,0 +1,28 @@
+FILTER_WINDOW_SIZE = 100000
+
+TENSOR_WINDOW_SIZE = 50
+TENSOR_WIDTH = 101
+TENSOR_HEIGHT = 30
+TENSOR_CHANNELS = 4 
+
+MIN_READ_COVERAGE = 10
+MIN_MAPPING_QUALITY = 10
+MIN_BASE_QUALITY = 20
+MIN_MUTANT_ALLELE_READS_TUMOR = 2
+MIN_MUTANT_ALLELE_FREQUENCY_TUMOR = 0.035
+
+MAX_MUTANT_ALLELE_FREQUENCY_NORMAL = 0.05
+
+BATCH_SIZE = 32
+
+# the ratio of train_set/test_set
+TRAIN_RATIO = 0.7
+
+# ViT parameters
+DROPOUT_RATE=0.1
+VIT_CHANNELS=4 # number of channels of input data
+VIT_DEPTH=6 # The number of layers in the transformer encoder.
+VIT_CLASSES = 5 #The number of output classes. In this model, it's 5 (A,C,G,T,N).
+VIT_HEADS=4 
+VIT_PATCH=10
+VIT_EMB_SIZE=128
